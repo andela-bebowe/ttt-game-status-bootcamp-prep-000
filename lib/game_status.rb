@@ -39,8 +39,8 @@ end
 
 def winner(board)
   win_val = nil
+  winHash = Hash.new(0);
   if won?(board)
-    winHash = Hash.new(0);
     WIN_COMBINATIONS.detect do |win_combo|
       win_combo.all? do |value|
         winHash[board[value]] += 1
