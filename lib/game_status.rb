@@ -55,4 +55,5 @@ def winner(board)
   end
   win_val
 end
+board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
 winner(board)
