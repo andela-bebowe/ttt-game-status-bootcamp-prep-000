@@ -144,23 +144,23 @@ describe "./lib/game_status.rb" do
     end
   end
 
-  # describe '#winner' do
-  #   it 'return X when X won' do
-  #     board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
-  #
-  #     expect(winner(board)).to eq("X")
-  #   end
-  #
-  #   it 'returns O when O won' do
-  #     board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
-  #
-  #     expect(winner(board)).to eq("O")
-  #   end
-  #
-  #   it 'returns nil when no winner' do
-  #     board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
-  #
-  #     expect(winner(board)).to be_nil
-  #   end
-  # end
+  describe '#winner' do
+    it 'return X when X won' do
+      board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+
+      expect(winner(board)).to eq("X")
+    end
+
+    it 'returns O when O won' do
+      board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
+
+      expect(winner(board)).to eq("O")
+    end
+
+    it 'returns nil when no winner' do
+      board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
+
+      expect(winner(board)).to be_nil
+    end
+  end
 end
