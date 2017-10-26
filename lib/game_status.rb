@@ -38,6 +38,7 @@ def over?(board)
 end
 
 def winner(board)
+  win_val = nil
   if won?(board)
     winHash = Hash.new(0);
     WIN_COMBINATIONS.detect do |win_combo|
@@ -46,9 +47,10 @@ def winner(board)
       end
     end
     if winHash['X'] == 3
-      'X'
+      win_val = 'X'
     elsif winHash['O'] == 3
-      'O'
+      win_val = 'O'
     end
   end
+  win_val
 end
