@@ -29,10 +29,10 @@ def full?(board)
   board.all? { |e| e != " "  }
 end
 
-# def draw?
-#
-# end
-#
+def draw?(board)
+  
+end
+
 # def over?(board)
 #
 # end
