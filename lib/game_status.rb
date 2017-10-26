@@ -44,8 +44,8 @@ def winner(board)
       win_combo.all? do |value|
         winHash[board[value]] += 1
       end
+      print winHash
     end
-    print winHash
     winHash['X'] == 3 ? 'X' : winHash['O'] == 3 ? '0' : nil
   end
 end
