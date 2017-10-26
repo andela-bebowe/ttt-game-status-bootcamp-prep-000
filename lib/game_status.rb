@@ -49,5 +49,5 @@ def winner(board)
     winHash['X'] == 3 ? 'X' : winHash['O'] == 3 ? '0' : nil
   end
 end
-board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+board = ["X", " ", "X", " ", "X", " ", " ", " ", "X"]
 winner(board)
