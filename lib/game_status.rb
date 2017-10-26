@@ -40,7 +40,7 @@ end
 def winner(board)
   if won?(board)
     winHash = Hash.new(0);
-    WIN_COMBINATIONS.detect do |win_combo|
+    WIN_COMBINATIONS.find do |win_combo|
       win_combo.all? do |value|
         winHash[board[value]] += 1
       end
