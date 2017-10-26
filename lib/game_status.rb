@@ -25,10 +25,10 @@ def won?(board)
   end
 end
 
-# def full?
-#
-# end
-#
+def full?(board)
+  board.all? { |e| e != " "  }
+end
+
 # def draw?
 #
 # end
