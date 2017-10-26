@@ -55,3 +55,4 @@ def winner(board)
   end
   win_val
 end
+winner(board)
