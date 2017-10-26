@@ -46,6 +46,7 @@ def winner(board)
         winHash[board[value]] += 1
       end
     end
+    print winHash
     if winHash['X'] == 3
       win_val = 'X'
     elsif winHash['O'] == 3
