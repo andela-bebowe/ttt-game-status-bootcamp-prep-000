@@ -43,8 +43,8 @@ def winner(board)
     WIN_COMBINATIONS.each do |win_combo|
       win_combo.all? do |value|
         winHash[board[value]] += 1
+        print winHash
       end
-      print winHash
     end
     winHash['X'] == 3 ? 'X' : winHash['O'] == 3 ? '0' : nil
   end
